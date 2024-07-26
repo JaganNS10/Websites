@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    line-height: 1.6em;
+}
+.one{
+    margin-top:0;
+    background-image: url("acme.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center right;
+    height: 500px;
+    color:white
+}
+.Two{
+    display: flex;
+    background-color: dimgrey;
+    height: 100px;
+}
+.footer{
+    margin-top:50px;
+    text-align: center;
+    background-color: orangered;
+    color: whitesmoke;
+    height: 80px;
+    padding-top:20px;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    border: 1px solid dimgray;
+    border-bottom-width:6px;
+    border-bottom-color:red ;
+    background-color: dimgrey;
+    font-size: 20px;
+}
+#navbar li{
+    display: inline;
+    padding: 30px;
+}
+#navbar{
+    margin-left: 580px;
+    margin-top: 25px;
+}
+.container h2{
+    margin-left:150px ;
+}
+
+.section h1 {
+    text-align: center;
+    margin-top:80px;
+    font-size: 40px;
+}
+.section p{
+    margin-left:150px; 
+} 
+
+.section{
+    color:black
+}
+#li-1{
+    color: red;
+}
+#form-1{
+    margin-top: 35px;
+    margin-left: 500px;
+}
+.Two h3{
+    margin-left: 150px;
+    box-sizing: border-box;
+    margin-top: 37px;
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+.Two button{
+    background-color: orangered;
+    font-size: 20px;
+    color: white;
+    padding: 2px 8px;
+}
+.Two input{
+    font-size: 20px
+}
+.images{
+    display: flex;
+    margin-left:150px;
+}
+
+.img1{
+    margin:55px 0 0 120px;
+}
+.img2{
+    margin: 55px 0 0 325px;
+}
+.img3{
+    margin: 30px 0 0 325px;
+}
+.Three{
+    display: flex;
+    margin:0 150px;
+}
+.main2{
+    padding:0 50px;
+}
+.main3{
+    padding-top: 0;
+    padding-left:15px;
+}
+.main1 h4{
+    margin-top:3px;
+    margin-left:105px;
+}
+.main2 h4{
+    margin-top:3px;
+    margin-left:105px;
+}
+.main3 h4{
+    margin-top:3px;
+    margin-left:110px;
+}
+
+.container a{
+    color:red;
+    text-decoration: none;
+}
+
+
+
+

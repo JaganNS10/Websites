@@ -1,0 +1,36 @@
+   <script>
+        var slideIndex = 0;
+        var slide = document.getElementsByClassName("slide");
+        function showslide() {
+            for (var i=0; i<slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slide.length) {
+                slideIndex = 1
+            }
+            slide[slideIndex-1].style.display = "block";
+            setTimeout(showslide, 2000);
+        }
+        showslide();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var expandBtns = document.querySelectorAll('.expand-btn');
+
+            expandBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var content = this.nextElementSibling;
+
+                    // Toggle the visibility of the content
+                    if (content.style.display === 'none') {
+                        content.style.display = 'block';
+                        this.textContent = '-'; // Change button text to "-" when content is expanded
+                    } else {
+                        content.style.display = 'none';
+                        this.textContent = 'Button +'; // Change button text to "+" when content is collapsed
+                    }
+                });
+            });
+        });
+        </script>
