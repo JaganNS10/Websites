@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html class="p-0 m-0 font-sans">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JIMDO</title>
+	<link rel="stylesheet" type="text/css" href="output.css">
+	<style type="text/css">
+		#website{
+			display:none;
+		}
+		#online_store{
+			display: none;
+		}
+		#Bussiness-Tools{
+			display: none;
+		}
+		#Knowledge{
+			display: none;
+		}
+		#Help{
+			display: none;
+		}
+		#A a{
+			font-size:18px;
+			letter-spacing: 0.9px; 
+			border:1px solid blue;
+			padding: 16px 120px 16px 120px;
+			font-weight: bold;
+			background-color:#2563eb;
+			color: white;
+		}
+		#A a:hover{
+			background-color: blue;
+			border:1px solid blue;
+		}
+		#Two a{
+			border: 2px solid #001453;
+			background-color:#001453;
+			color: white;
+			padding: 15px 75px 15px 75px;
+			font-size:18px;
+			font-weight: bold;	
+			border-radius:5px;	
+		}
+		#Two a:hover{
+			border: 2px solid blue;
+			background-color: blue;
+		}
+		#Main p{
+			width:17px;
+			height:17px;
+			background-color:#d0d6d7;
+			border-radius: 90%;
+		}
+		#Main p:hover{
+			background-color:blue;
+		}
+		#A1 a{
+			font-weight: bold;
+			border: 1px solid #2563eb;
+			padding:17px 75px 17px 75px;
+			background-color: #2563eb;
+			color: white;
+			border-radius:5px;
+		}
+		#A1 a:hover{
+			background-color: blue;
+		}
+		#Inside-Nav{
+			display: none;
+		}
+		#Nav:hover #Inside-Nav{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex shadow-sm  py-3 sticky top-0 border bg-white">
+		<div class="flex ml-12 my-3 px-2 py-1 text-2xl font-bold" style="border:3.5px solid black;">
+			<a href="#">JIMDO</a>
+		</div>
+		<div class="flex space-x-20 ml-36 mr-80 my-5 text-lg font-bold text-zinc-700">
+			<div onmouseover="Display_over()">
+				<p class="hover:text-blue-500">
+					<a href="#">Website</a>
+				</p>
+			</div>
+			<div onmouseover="Display1_over()">
+				<p class="hover:text-blue-500">
+					<a href="#">Online Store</a>
+				</p>
+			</div>
+			<div onmouseover="Display2_over()">
+				<p class="hover:text-blue-500">
+					<a href="#">Bussiness-Tools</a>
+				</p>
+			</div>
+		</div>
+		<div class="flex space-x-14  my-5 text-lg font-bold text-zinc-600">
+			<div onmouseover="Display3_over()">
+				<p class="hover:text-blue-500">
+					<a href="#">Knowledge Guide</a>
+				</p>
+			</div>
+			<div onmouseover="Display4_over()">
+				<p class="hover:text-blue-500">
+					<a href="#">Help</a>
+				</p>
+			</div>
+			<div onmouseover="Display5_over()">
+				<p class="hover:text-blue-500">
+					<a href="#">Log In</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="website" onmouseleave="Display_out()" class="sticky top-24">
+		<div class="flex space-x-24 bg-slate-100 shadow-md border-2  p-10 ml-52 w-7/12 absolute">
+			<div class="space-y-5">
+				<p class="text-sm tracking-wider font-medium text-gray-500">
+					OUR WEBSITE BUILDER
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Create a website</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Pricing and Plans</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Website examples</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Your own domain</a>
+				</p>
+			</div>
+			<div class="space-y-5">
+				<p class="text-sm tracking-wider font-medium text-gray-500">
+					USEFUL TOOLS FOR YOUR WEBSITE
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Warning-proof legal texts<br>
+					<span class="font-normal text-base">For privacy policy & Co</span></a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Industry entries<br>
+						<span class="font-normal text-base">For Google, Facebook & Co.</span>
+					</a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Online booking<br>
+					<span class="font-normal text-base">Directly via your website</span>
+				</a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Social media integration<br>
+						<span class="font-normal text-base">Promote on Facebook & Instagram</span>
+					</a>
+				</p>
+			</div>
+			<div class="space-y-5">
+				<p class="text-base tracking-wider font-medium text-gray-500">
+					FOR YOUR INDUSTRY
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Online portfolio</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Restaurant websites</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Coaches</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Musicians & Bands</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Real estate agents</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Doctors & practices</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id='online_store' onmouseleave="Display1_out()" class="sticky top-24">
+		<div class="flex space-x-24 shadow-md border-2 p-10 w-1/2 ml-96 absolute bg-white">
+			<div class="space-y-5">
+				<p class="text-sm tracking-wider font-medium text-gray-500">
+					OUR ONLINE STORE BUILDER
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Create an online store</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Pricing and Plans</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Online store examples</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Your own domain</a>
+				</p>
+			</div>
+			<div class="space-y-5">
+				<p class="text-sm tracking-wider font-medium text-gray-500">
+					USEFUL TOOLS FOR YOUR STORE
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Warning-proof legal texts<br>
+					<span class="font-normal text-base">For general terms and conditions, privacy policy & Co</span></a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Industry entries<br>
+						<span class="font-normal text-base">For Google, Facebook & Co.</span>
+					</a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Social media integration<br>
+						<span class="font-normal text-base">Sell on Facebook & Instagram</span>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id='Bussiness-Tools' onmouseleave="Display2_out()" class="sticky top-24">
+		<div class="flex space-x-24 shadow-md border-2 p-10 w-2/5 absolute bg-white" style="margin-left: 550px;">
+			<div class="space-y-5">
+				<p class="text-sm tracking-wider font-medium text-gray-500">
+					A LOGO FOR YOUR BUSSINESS
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Logo Generator</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Create your own free logo</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Logo examples</a>
+				</p>
+				<p class="font-bold hover:text-blue-400">
+					<a href="#">Get inspired</a>
+				</p>
+			</div>
+			<div class="space-y-5">
+				<p class="text-sm tracking-wider font-medium text-gray-500">
+					MORE USEFUL TOOLS
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Industry entries<br>
+						<span class="font-normal text-base">For Google, Facebook & Co.</span>
+					</a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Warning-proof legal texts<br>
+					<span class="font-normal text-base">For privacy policy & Co</span></a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Social media integration<br>
+						<span class="font-normal text-base">Sell on Facebook & Instagram</span>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="Knowledge" onmouseleave="Display3_out()" class="sticky top-24">
+		<div>
+			<div class="space-y-5 shadow-md border-2 p-14 w-1/4 absolute bg-white" style="margin-left: 1000px;">
+				<p class="text-sm tracking-wider font-medium text-gray-500">
+					EXPERTISE,TIPS AND INSPIRATION
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">All Topics<br>
+						<span class="font-normal text-base">Knowledge guide overview</span>
+					</a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Website Tips<br>
+					<span class="font-normal text-base">Get the most out of your website</span></a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Business Knowledge<br>
+						<span class="font-normal text-base">Everything about your self-employment</span>
+					</a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Success stories<br>
+						<span class="font-normal text-base">Inspiring stories by real Jimdo customers</span>
+					</a>
+				</p>
+				<p class="hover:text-blue-500">
+					<a href="#" class="font-bold">Jimdo Updates<br>
+						<span class="font-normal text-base">What's new at Jimdo?</span>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id='Help' onmouseleave="Display4_out()" class="sticky top-24">
+		<div class="space-y-5 shadow-md border-2 p-8 w-1/5 absolute bg-white" style="margin-left: 1150px;">
+			<p class="text-sm tracking-wider font-medium text-gray-500">
+				HOW CAN WE HELP YOU?
+			</p>
+			<p class="hover:text-blue-500">
+				<a href="#" class="font-bold">Help center<br>
+					<span class="font-normal text-base">Find answers to your questions</span>
+				</a>
+			</p>
+			<p class="hover:text-blue-500">
+				<a href="#" class="font-bold">Contact support<br>
+					<span class="font-normal text-base">Our support team is here for you</span>
+				</a>
+			</p>
+		</div>
+	</div>
+	<div class="flex space-x-20 pl-10 pt-36 pb-36 bg-gray-100">
+		<div class="w-1/2">
+			<p class="">
+				<img src="img-1.webp" alt="header-image">
+			</p>
+		</div>
+		<div class="space-y-12">
+				<h1 class="text-7xl/3 leading-tight">
+					A successful<br>business needs a<br>professional<br>website
+				</h1>
+				<p class="text-lg tracking-wider font-medium text-gray-600">
+					Building a successful business always starts with building a<br> professional website. Jimdo is by your side with everything you need<br>for a successful business. Build your professional website now, build<br>your success.
+				</p>
+				<p id="A">
+					<a href="#">
+						Start for Free
+						<span style="font-size: 18px;position: relative;top: 1px;">
+							->		
+						</span>
+					</a>	
+				</p>
+		</div>	
+	</div>
+	<div class="mt-20 space-y-12">
+		<div>
+			<p class="text-5xl font-medium text-center">
+				Every business has its own needs
+			</p>
+		</div>
+		<div class="ml-20 flex space-x-12">
+			<div class="space-y-5">
+				<img src="img-2.webp" style="width: 420px;">
+				<p class="text-2xl font-semibold">Business Websites</p>
+				<p class="text-lg tracking-wide font-medium text-slate-700">
+					Everything you need to create a professional<br>homepage and site for your business: a custom<br>domain, SEO tools, automated business listings,<br>and more.
+				</p>
+				<p>
+					<a href="#" class="text-lg tracking-wide font-medium underline underline-offset-8 decoration-1 hover:no-underline">
+						Business Website how to
+					    <span class="text-xl font-extrabold">+</span>
+					</a>
+				</p>
+			</div>
+			<div class="space-y-5">
+				<img src="img-3.webp" style="width: 420px;">
+				<p class="text-2xl font-semibold">Onlineshop</p>
+				<p class="text-lg tracking-wide font-medium text-slate-700">
+					For hobbies, projects, clubs and more. A website<br>of your own is your calling card on the web, with<br>the tools you need to reach people around the<br>world and around the clock.
+				</p>
+				<p>
+					<a href="#" class="text-lg tracking-wide font-medium underline underline-offset-8 decoration-1 hover:no-underline">
+						Onlineshop how to
+						<span class="text-xl font-extrabold">+</span>
+					</a>
+				</p>	
+			</div>
+			<div class="space-y-5">
+				<img src="img-4.webp" style="width: 420px;">
+				<p class="text-2xl font-semibold">Portfolio Website</p>
+				<p class="text-lg tracking-wide font-medium text-slate-700">
+					Looking to find new work or new audiences?<br>Present yourself and your portfolio or resume in<br>the best light with a customized website
+				</p>
+				<p class="pt-6">
+					<a href="#" class="text-lg tracking-wide font-medium underline underline-offset-8 decoration-1 hover:no-underline">
+						Portfolio Website how to
+						<span class="text-xl font-extrabold">+</span>
+					</a>
+				</p>	
+			</div>
+		</div>
+	</div>
+	<div class="flex ml-32 mt-32 space-x-9">
+		<div class="space-y-7 text-nowrap mt-28">
+			<p class="text-5xl font-medium leading-tight tracking-wide">
+				Your website without all<br>the bells and whistles but<br>with everything you need
+			</p>
+			<p class="text-xl tracking-wider">
+				Build your professional website with the power of the Jimdo Artificial<br>Intelligence. Whatever you need for your business and website, our<br>AI simplifies it, speeds it up and knows exactly what you need to be<br>successful.
+			</p>
+			<p class="pt-8">
+				<a href="#" class="text-lg tracking-wide font-medium underline underline-offset-8 decoration-1 hover:no-underline">
+				Learn More
+				<span class="text-xl font-extrabold">+</span>
+			</a>
+			</p>
+			<p id="Two" class="pt-14">
+				<a href="#">Get Started</a>
+			</p>
+		</div>
+		<div>
+			<img src="img-5.webp">
+		</div>
+	</div>
+	<div class="flex ml-32 mt-24 space-x-9">
+		<div class="space-y-7 text-nowrap mt-28">
+			<p class="text-5xl font-medium leading-tight tracking-wide">
+				The easy way to get your<br>first transaction
+			</p>
+			<p class="text-xl tracking-wider">
+				Make money online with your product or service – we make it easy<br> for you. Create your online store with ease - we do not charge fees<br>on your sales. Or get your service running with your booking tool.
+			</p>
+			<p class="pt-8">
+				<a href="#" class="text-lg tracking-wide font-medium underline underline-offset-8 decoration-1 hover:no-underline">
+				Learn More
+				<span class="text-xl font-extrabold">+</span>
+			</a>
+			</p>
+			<p id="Two" class="pt-14">
+				<a href="#">Get Started</a>
+			</p>
+		</div>
+		<div>
+			<img src="img-6.webp">
+		</div>
+	</div>
+	<div class="bg-slate-100 mt-16 pb-40 pl-36 flex space-x-10">
+		<div class="space-y-5 pt-60  text-nowrap">
+			<p class="text-4xl font-normal leading-snug tracking-wide text-slate-950">
+				"I wanted a website that was easy to<br>design and edit. At the same time, it<br>should also reflect my art. With Jimdo,<br>I've found the perfect combination."
+			</p>
+			<p class="text-xl tracking-wide">
+				Stephanie Tost – stephanietost.de
+			</p>
+		</div>
+		<div class="pt-48">
+			<img src="img-9.webp" style="width: 700px;">
+		</div>
+	</div>
+	<div>
+		<p class="text-7xl text-center  leading-tight mt-20">
+			Take your business further with<br>our business turbos
+		</p>
+	</div>
+	<div class="flex space-x-10 mt-20 ml-10">
+		<div>
+			<img src="img-7.webp" style="width: 700px;">
+		</div>
+		<div class=" pt-20">
+			<p class="text-5xl leading-tight">
+				Your own domain in just<br>three clicks
+			</p>
+			<p class="text-xl tracking-wide pt-6 leading-snug">
+				Your website appears professional and trustworthy: with a domain<br>including HTTPS encryption, hosting, and the added benefit of<br> being more easily found through search engines like Google.
+			</p>
+			<p class="pt-16">
+				<a href="#" class="text-lg tracking-wide font-medium underline underline-offset-8 decoration-1 hover:no-underline">
+					Get your domain now
+					<span class="text-xl font-extrabold">+</span>
+				</a>
+			</p>
+		</div>
+	</div>
+	<div class="flex mt-32 ml-28 space-x-16">
+		<div class="pt-20">
+			<p class="text-5xl leading-tight">
+				Your support from other<br>business owners
+			</p>
+			<p class="text-xl tracking-wide pt-6 leading-snug">
+				The Jimdo Community is a place where you can benefit from the<br> experiences of other entrepreneurs. Get answers to all your<br> questions and take your business to the next level.
+			</p>
+			<p class="pt-16">
+				<a href="#" class="text-lg tracking-wide font-medium underline underline-offset-8 decoration-1 hover:no-underline">
+					Join the community
+					<span class="text-xl font-extrabold">+</span>
+				</a>
+			</p>
+		</div>
+		<div>
+			<img src="img-8.webp" style="width: 700px;">
+		</div>
+	</div>
+	<div class=" mt-14 bg-neutral-100 pb-36">
+		<div class="pt-36 text-center">
+			<p class="text-7xl leading-tight">
+				Get inspired by other<br>
+				small businesses
+			</p>
+		</div>
+		<div class="flex pl-80 pt-24">
+			<div class="space-y-10" id="ONE">
+				<img src="img-10.webp" style="width:900px;">
+				<p class="text-center text-lg text-slate-950 font-medium">Sandra www.balkonfreundin.com</p>
+			</div>
+			<div style="display: none;" class="space-y-10" id="TWO">
+				<img src="img-11.webp" style="width: 900px;">
+				<p class="text-center text-lg text-slate-950 font-medium">
+					Alexander craft-cafe-hamburg.jimdosite.com/
+				</p>
+			</div>
+			<div style="display: none;" class="space-y-10" id="THREE">
+				<img src="img-12.webp" style="width: 900px;">
+				<p class="text-center text-lg text-slate-950 font-medium">Stephanie www.stephanietost.de</p>
+			</div>
+			<div style="display: none;" class="space-y-10" id="FOUR">
+				<img src="img-13.webp" style="width: 900px;">
+				<p class="text-center text-lg text-slate-950 font-medium">Brigit www.spectrum-fashion.de</p>
+			</div>
+			<div style="display: none;" class="space-y-10" id="FIVE">
+				<img src="img-14.webp" style="width: 900px;">
+				<p class="text-center text-lg text-slate-950 font-medium">Peter www.seifen.geschenk.de</p>
+			</div>
+		</div>
+		<div class="flex space-x-4 pb-20" style="padding-left:690px;padding-top:70px;" id="Main">
+			<p onclick="ONE(this)"></p>
+			<p onclick="TWO(this)"></p>
+			<p onclick="THREE(this)"></p>
+			<p onclick="FOUR(this)"></p>
+			<p onclick="FIVE(this)"></p>
+		</div>
+		<div>
+			<div class="bg-slate-700 pl-40 py-40 space-y-5 text-white">
+				<p class="text-3xl leading-snug tracking-wide">
+					"The path you're on now, I've walked it<br>too. I know what it's like to be<br>bombarded with everything during<br>this time. That's why I give you my<br>word that we want to offer you exactly<br>the support you need to turn your<br>business idea into a real success story."
+				</p>
+				<p class="text-xl leading-snug tracking-wide">
+					Matthias ‘Matze’ Henze<br>
+					CEO and founder of Jimdo
+				</p>
+			</div>
+		</div>
+		<div class="space-y-16 text-center pt-24">
+			<p class="text-7xl">
+				Your success is our mission
+			</p>
+			<p id="A1">
+				<a href="#">Get Started</a>
+			</p>
+		</div>
+	</div>
+	<div class="flex ml-10 mt-20 space-x-64">
+		<div class="space-y-14">
+			<div>
+				<a href="#" class="px-2 py-1 font-bold" style="border:3.5px solid black;font-size: 27px;">
+					JIMDO 
+				</a>
+			</div>
+			<div class="inline-flex space-x-5">
+				<a href="#" class="hover:text-blue-600">
+					<svg width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+						<path d="M24 0C10.745 0 0 10.81 0 24.147 0 36.199 8.776 46.189 20.25 48V31.127h-6.094v-6.98h6.094v-5.32c0-6.052 3.583-9.395 9.065-9.395 2.626 0 5.372.472 5.372.472v5.942h-3.026c-2.981 0-3.911 1.862-3.911 3.771v4.53h6.656l-1.064 6.98H27.75V48C39.224 46.189 48 36.199 48 24.147 48 10.81 37.255 0 24 0z" fill="currentColor" fill-rule="evenodd">
+						</path>
+					</svg>
+				</a>
+				<a href="#" class="hover:text-blue-600">
+					<svg width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="instagram_svg__a" d="M0 .015h47.8V47.81H0z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="instagram_svg__b" fill="#fff"><use xlink:href="#instagram_svg__a"></use></mask><path d="M23.955 2.372c-5.862 0-6.597.025-8.899.13-2.297.104-3.866.47-5.239 1.003a10.568 10.568 0 00-3.823 2.49c-1.2 1.2-1.938 2.403-2.49 3.822-.533 1.373-.898 2.942-1.002 5.24-.105 2.301-.13 3.036-.13 8.898 0 5.861.025 6.596.13 8.898.104 2.298.47 3.867 1.003 5.24a10.573 10.573 0 002.49 3.822c1.2 1.2 2.403 1.938 3.822 2.49 1.373.533 2.942.898 5.24 1.003 2.301.105 3.036.13 8.898.13 5.861 0 6.596-.025 8.898-.13 2.298-.105 3.867-.47 5.24-1.003 1.419-.552 2.622-1.29 3.822-2.49 1.2-1.2 1.938-2.403 2.49-3.822.533-1.373.898-2.942 1.003-5.24.105-2.302.13-3.037.13-8.898 0-5.862-.025-6.597-.13-8.899-.105-2.297-.47-3.866-1.003-5.239-.552-1.42-1.29-2.623-2.49-3.823-1.2-1.2-2.403-1.938-3.822-2.49-1.373-.533-2.942-.898-5.24-1.002-2.302-.105-3.037-.13-8.898-.13zm0 3.889c5.763 0 6.445.022 8.721.125 2.105.096 3.247.448 4.008.744 1.007.391 1.726.859 2.482 1.614.755.755 1.223 1.474 1.614 2.482.296.76.647 1.903.743 4.007.104 2.276.126 2.959.126 8.722s-.022 6.445-.126 8.721c-.096 2.105-.447 3.247-.743 4.008-.391 1.007-.86 1.726-1.614 2.482-.756.755-1.475 1.223-2.482 1.614-.76.296-1.903.647-4.008.743-2.275.104-2.958.126-8.721.126-5.764 0-6.446-.022-8.722-.126-2.104-.096-3.247-.447-4.007-.743-1.008-.391-1.727-.86-2.482-1.614-.755-.756-1.223-1.475-1.614-2.482-.296-.76-.648-1.903-.744-4.008-.103-2.276-.125-2.958-.125-8.721s.022-6.446.125-8.722c.096-2.104.448-3.247.744-4.007.391-1.008.859-1.727 1.614-2.482.755-.755 1.474-1.223 2.482-1.614.76-.296 1.903-.648 4.007-.744 2.276-.103 2.959-.125 8.722-.125z" fill="currentColor" mask="url(#instagram_svg__b)"></path><path d="M23.9 31.882a7.967 7.967 0 110-15.934 7.967 7.967 0 010 15.934zm-12.273-7.967c0 6.778 5.495 12.273 12.273 12.273s12.273-5.495 12.273-12.273S30.678 11.642 23.9 11.642s-12.273 5.495-12.273 12.273zm27.899-12.758a2.868 2.868 0 11-5.736 0 2.868 2.868 0 015.736 0" fill="currentColor"></path></g></svg>
+				</a>
+				<a href="#" class="hover:text-blue-600">
+					<svg width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M23.99 0C10.722 0 0 10.741 0 23.99c0 10.17 6.318 18.857 15.243 22.351-.217-1.895-.395-4.817.08-6.89.433-1.876 2.803-11.927 2.803-11.927s-.71-1.44-.71-3.554c0-3.337 1.934-5.824 4.343-5.824 2.053 0 3.04 1.54 3.04 3.376 0 2.053-1.302 5.134-1.994 7.997-.572 2.389 1.205 4.344 3.555 4.344 4.264 0 7.542-4.502 7.542-10.979 0-5.745-4.127-9.754-10.03-9.754-6.832 0-10.84 5.114-10.84 10.406 0 2.053.79 4.265 1.777 5.47a.714.714 0 01.158.69c-.178.75-.593 2.39-.672 2.725-.098.435-.355.533-.81.316-2.96-1.421-4.817-5.805-4.817-9.32 0-7.562 5.49-14.512 15.855-14.512 8.313 0 14.79 5.923 14.79 13.86 0 8.274-5.213 14.928-12.44 14.928-2.429 0-4.72-1.264-5.49-2.764l-1.5 5.706c-.533 2.093-1.994 4.7-2.981 6.299 2.25.69 4.62 1.066 7.108 1.066C37.259 48 48 37.259 48 24.01 47.98 10.74 37.239 0 23.99 0z" fill="currentColor" fill-rule="evenodd"></path></svg>
+				</a>
+				<a href="#" class="hover:text-blue-600">
+					<svg width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M23.76 0c13.122 0 23.76 10.638 23.76 23.76 0 13.122-10.638 23.76-23.76 23.76C10.638 47.52 0 36.882 0 23.76 0 10.638 10.638 0 23.76 0zm6.213 13.603a5.73 5.73 0 00-5.726 5.726c0 .451.048.89.155 1.307-4.764-.238-8.982-2.519-11.81-5.988a5.747 5.747 0 00-.771 2.875 5.703 5.703 0 002.554 4.764 5.627 5.627 0 01-2.59-.713v.071a5.735 5.735 0 004.598 5.62 5.71 5.71 0 01-1.51.202 5.47 5.47 0 01-1.08-.107 5.72 5.72 0 005.346 3.98 11.515 11.515 0 01-8.483 2.364 15.96 15.96 0 008.756 2.59c10.537 0 16.3-8.732 16.3-16.3 0-.25 0-.499-.013-.737a11.736 11.736 0 002.863-2.97c-1.021.452-2.126.76-3.29.903a5.725 5.725 0 002.518-3.172 11.6 11.6 0 01-3.635 1.39 5.7 5.7 0 00-4.182-1.805z" fill="currentColor"></path></svg>
+				</a>
+				<a href="#" class="hover:text-blue-600">
+						<svg width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="youtube_svg__a" d="M0 0h47.91v33.537H0z"></path></defs><g transform="translate(0 7)" fill="none" fill-rule="evenodd"><mask id="youtube_svg__b" fill="#fff"><use xlink:href="#youtube_svg__a"></use></mask><path d="M19.164 23.955V9.582l12.447 7.186-12.447 7.187zM46.909 5.237A6.001 6.001 0 0042.673 1c-3.736-1-18.718-1-18.718-1S8.973 0 5.237 1A6 6 0 001 5.237C0 8.973 0 16.768 0 16.768S0 24.564 1.001 28.3a6 6 0 004.236 4.236c3.736 1 18.718 1 18.718 1s14.982 0 18.718-1a6.001 6.001 0 004.236-4.236c1-3.736 1-11.532 1-11.532s0-7.795-1-11.531z" fill="currentColor" mask="url(#youtube_svg__b)"></path></g></svg>
+				</a>
+			</div>
+		</div>
+		<div class="flex space-x-44">
+			<div class="text-base font-medium space-y-2 text-gray-950">
+				<p>
+					Products
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Website</a>
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Online Store</a>
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Domain</a>
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Logo</a>
+				</p>
+			</div>
+			<div class="text-base font-medium space-y-2 text-gray-950">
+				<p>
+					About us
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">About Jimdo</a>
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Careers</a>
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Affiliates</a>
+				</p>
+			</div>
+			<div class="text-base font-medium space-y-2 text-gray-950">
+				<p>
+					Service
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Jimdo Blog</a>
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Inspiration</a>
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Help Center</a>
+				</p>
+				<p>
+					<a href="#" class="hover:text-blue-600">Contact Support</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="mt-44 ml-10 flex">
+		<div class="inline-flex text-lg font-medium text-gray-600 space-x-4 text-nowrap">
+			<p>
+				<a href="#">Legal notice</a>
+			</p>
+			<p>
+				<a href="#">Terms of Service</a>
+			</p>
+			<p>
+				<a href="#">Privacy Policy</a>
+			</p>
+		</div>
+		<div id="Nav" class="flex gap-4 absolute right-28">
+			<div class="inline-flex">
+				<a href="#" class="hover:text-blue-600">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="border-radius: 50%;width: 30px;"><path d="M0 0v30h30V0z" fill="#012169"></path><path d="M0 0l30 30m0-30L0 30" stroke="#fff" stroke-width="6"></path><path d="M0 0l30 30m0-30L0 30" stroke="#C8102E" stroke-width="4"></path><path d="M15 0v30M0 15h30" stroke="#fff" stroke-width="10"></path><path d="M15 0v30M0 15h30" stroke="#C8102E" stroke-width="6"></path>
+					</svg>
+				</a>
+				<a href="#">
+					<svg viewBox="0 0 3900 3900" style="border-radius: 50%;width: 30px;"><path fill="#b22234" d="M0 0h3900v3900H0z"></path><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"></path><path fill="#3c3b6e" d="M0 0h2964v2100H0z"></path><path d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"></path></svg>
+				</a>
+			</div>
+			<div class="space-y-1">
+				<p class="text-lg font-medium">
+					<a href="#" class="hover:text-blue-700">English</a>
+				</p>
+				<div id="Inside-Nav" class="border shadow-md absolute bottom-8  -right-6 ">
+					<ul class="text-lg font-medium space-y-3">
+						<li class="hover:border border-blue-800 px-10 py-1">
+							<a href="#" class="hover:text-blue-600">
+								Deutsch		
+							</a>
+						</li>
+						<li class="hover:border border-blue-800 px-10 py-1">
+							<a href="#" class="hover:text-blue-600">
+								Español
+							</a>
+						</li>
+						<li class="hover:border border-blue-800 px-10 py-1">
+							<a href="#" class="hover:text-blue-600">
+								Français
+							</a>
+						</li>
+						<li class="hover:border border-blue-800 px-10 py-1">
+							<a href="#">
+								Italiano
+							</a>
+						</li>
+						<li class="hover:border border-blue-800 px-10 py-1">
+							<a href="#" class="hover:text-blue-600">
+								日本語
+							</a>
+						</li>
+						<li class="hover:border border-blue-800 px-10 py-1">
+							<a href="#" class="hover:text-blue-600">
+								Nederlands
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function Display_over(){
+			document.getElementById('website').style.display='block';
+			document.getElementById('online_store').style.display='none';
+			document.getElementById('Bussiness-Tools').style.display='none';
+			document.getElementById('Knowledge').style.display='none';
+			document.getElementById('Help').style.display='none';
+		}
+		function Display_out(){
+			document.getElementById('website').style.display='none';
+		}
+		function Display1_over(){
+			document.getElementById('website').style.display='none';
+			document.getElementById('Bussiness-Tools').style.display='none';
+			document.getElementById('Knowledge').style.display='none';
+			document.getElementById('Help').style.display='none';
+			document.getElementById('online_store').style.display='block';
+		}
+		function Display1_out(){
+			document.getElementById('online_store').style.display='none';
+		}
+		function Display2_over(){
+			document.getElementById('website').style.display='none';
+			document.getElementById('online_store').style.display='none';
+			document.getElementById('Knowledge').style.display='none';
+			document.getElementById('Help').style.display='none';
+			document.getElementById('Bussiness-Tools').style.display='block';
+		}
+		function Display2_out(){
+			document.getElementById('Bussiness-Tools').style.display='none';
+		}
+
+		function Display3_over(){
+			document.getElementById('website').style.display='none';
+			document.getElementById('online_store').style.display='none';
+			document.getElementById('Bussiness-Tools').style.display='none';
+			document.getElementById('Help').style.display='none';
+			document.getElementById('Knowledge').style.display='block';
+		}
+		function Display3_out(){
+			document.getElementById('Knowledge').style.display='none';
+		}
+
+		function Display4_over(){
+			document.getElementById('website').style.display='none';
+			document.getElementById('online_store').style.display='none';
+			document.getElementById('Bussiness-Tools').style.display='none';
+			document.getElementById('Knowledge').style.display='none';
+			document.getElementById('Help').style.display='block';
+		}
+		function Display4_out(){
+			document.getElementById('Help').style.display='none';
+		}
+		function Display5_over(){
+			document.getElementById('Help').style.display='none';
+		}
+	</script>
+	<script>
+		function ONE(argument){	
+			// argument.style.backgroundColor="orange";
+			document.getElementById("ONE").style.display="block";
+			document.getElementById("TWO").style.display="none";
+			document.getElementById("THREE").style.display="none";
+			document.getElementById("FOUR").style.display="none";
+			document.getElementById("FIVE").style.display="none";
+		}
+		function TWO(argument){	
+			// argument.style.backgroundColor="orange";
+			document.getElementById("ONE").style.display="none";
+			document.getElementById("TWO").style.display="block";
+			document.getElementById("THREE").style.display="none";
+			document.getElementById("FOUR").style.display="none";
+			document.getElementById("FIVE").style.display="none";
+		}
+		function THREE(argument){	
+			// argument.style.backgroundColor="orange";
+			document.getElementById("ONE").style.display="none";
+			document.getElementById("TWO").style.display="none";
+			document.getElementById("THREE").style.display="block";
+			document.getElementById("FOUR").style.display="none";
+			document.getElementById("FIVE").style.display="none";
+		}
+		function FOUR(argument){
+		    // argument.style.backgroundColor="orange";	
+			document.getElementById("ONE").style.display="none";
+			document.getElementById("TWO").style.display="none";
+			document.getElementById("THREE").style.display="none";
+			document.getElementById("FOUR").style.display="block";
+			document.getElementById("FIVE").style.display="none";
+		}
+		function FIVE(argument){
+		    // argument.style.backgroundColor="orange";	
+			document.getElementById("ONE").style.display="none";
+			document.getElementById("TWO").style.display="none";
+			document.getElementById("THREE").style.display="none";
+			document.getElementById("FOUR").style.display="none";
+			document.getElementById("FIVE").style.display="block";
+		}
+	</script>
+	<div style="padding-bottom: 80px;"></div>
+</body>
+</html>
