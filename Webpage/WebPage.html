@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="WebPage.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+    <div id="controls">
+    	<div class="Input">
+    		<input type="text" id="textInput" placeholder="Add text here..." />
+    		<a id="addText" href="#">Add Text</a>
+    	</div>
+    	<div class="undoredo">
+    		   <button id="undo">Undo</button>
+    		   <button id="redo">Redo</button>
+    	</div>
+	</div>
+	<div id="Main">
+		<div id="editor"></div>
+	</div>
+	<div id="FamilySizeStyle">
+	    <div class="FontFamily">
+	    	<select onclick="FontFamily(this)">
+	    		<option>Font Family</option>
+	    		<option>sans-serif</option>
+	    		<option>monospace</option>
+	    		<option>fantasy</option>
+	    		<option>cursive</option>
+	    		<option>serif</option>
+	    	</select>
+	    </div>
+	    <div class="FontFamily">
+	    	<select onclick="FontStyle(this)">
+	    		<option>Font Style</option>
+	    		<option>italic</option>
+	    		<option>normal</option>
+	    	</select>
+	    </div>
+	    <div class="FontFamily">
+	    	<select onclick="FontWeight(this)">
+	    		<option>Font Weight</option>
+	    		<option>bold</option>
+	    		<option>lighter</option>
+	    	</select>
+	    </div>
+	 </div>  
+	 <div class="FontSize">
+	 	<button onclick="FontDecrease()">-</button>
+	    <input type="number" value="15" id="Fontsize">
+	    <button onclick="FontIncrease()">+</button>
+	 </div> 				
+	<script type="text/javascript" src="WebPage.js">
+	</script>
+	<!-- <div style="padding-bottom: 200px;"></div> -->
+</body>
+</html>
