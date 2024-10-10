@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Baron Kuffner';
+    src: url('Baron Kuffner.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background-image: url("Alabay Merch/Alabay heritage prev gradient.png");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-1{
+	margin: 10px 50px;
+}
+.section-1 div h1{
+    font-family: 'Baron Kuffner',sans-serif;
+	font-size: 96px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+}
+.section-1 div span{
+	font-family: 'Bebas Neue',sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	letter-spacing: 0.23em;
+	color:rgba(144, 255, 174, 1);
+}
+.section-2{
+	margin: 25px 100px 30px 50px;
+}
+.section-2 h1{
+	font-family: Montserrat;
+	font-size: 32px;
+	font-weight: 700;
+	padding-bottom:10px;
+	color: rgba(144, 255, 174, 1);
+}
+.section-2 p{
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	color: rgba(255, 255, 255, 1);
+	padding: 8px 0;
+}
+.section-2 span{
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	color: rgba(144, 255, 174, 1);
+}
+.section-2 li{
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 25px;
+	color: rgba(255, 255, 255, 1);
+	padding: 15px 0 0 25px;
+}
+.section-2 ul{
+	list-style-type: none;
+}
+.section-3{
+	margin: 0 30px;
+}
+.section-3 a{
+	margin: 0 15px;
+}
+.section-3 a:nth-child(1){
+	text-decoration: none;
+	border: 2px solid rgba(255, 255, 255, 1);
+	background: rgba(255, 255, 255, 1);
+	padding: 10px 40px;
+	border-radius: 25px;
+	color:rgba(32, 30, 38, 1);
+	font-family: Helvetica;
+	font-weight: bold;
+}
+.section-3 a:nth-child(1):hover{
+	border: 2px solid rgba(32, 30, 38, 1);
+	background: rgba(32, 30, 38, 1);
+	color: rgba(255, 255, 255, 1);	
+	transition: all 0.8s ease;
+}
+.section-3 a:nth-child(2){
+	text-decoration: none;
+	border: 2px solid rgba(255, 255, 255, 1);
+	background:rgba(32, 30, 38, 1);
+	padding: 10px 40px;
+	border-radius: 25px;
+	color:rgba(32, 30, 38, 1);
+	font-family: Helvetica;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+
+}
+.section-3 a:nth-child(2):hover{
+	border: 2px solid border: 2px solid rgba(32, 30, 38, 1);
+	background:rgba(255, 255, 255, 1);
+	color: rgba(32, 30, 38, 1);	
+	transition: all 0.8s ease;;
+}
+
+@media (max-width:768px){
+	.section-1{
+		margin: 10px;
+	}
+	.section-2{
+		margin: 25px 10px;
+	}
+	.section-3{
+		margin: 20px 10px;
+	}
+
+}
