@@ -1,0 +1,822 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Cheeseburga';
+    src: url('assets/CHEESEBURGA demo.ttf') format('truetype'); /* Make sure the path is correct */
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    background-image: url('assets/MainImage.png');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.section-1{
+    text-align: center;
+}
+.section-1 h1{
+    font-family: CHEESEBURGA;
+    font-size: 14vh;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:rgba(126, 255, 94, 1);
+    /* Black border using text-shadow */
+    text-shadow: 
+        -4px -4px 0 #000, /* Top-left shadow */
+         4px -4px 0 #000, /* Top-right shadow */
+        -4px  4px 0 #000, /* Bottom-left shadow */
+         4px  4px 0 #000, /* Bottom-right shadow */
+        -5px  0px 0 #000, /* Left */
+         5px  0px 0 #000, /* Right */
+         0px -5px 0 #000, /* Top */
+         0px  5px 0 #000; /* Bottom */
+}
+.section-1 p{
+    font-family: 'CHEESEBURGA';
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.section-1 p span{
+    color: rgba(255, 199, 0, 1);
+}
+
+.section-1 div:nth-child(2){
+    margin-top: 310px;
+    background-color: black;
+    padding: 15px 0;
+}
+
+
+.section-2{
+    margin:30px 50px 0 50px;
+}
+.section-2 div{
+    text-align: center;
+    border: 2px solid rgba(255, 199, 0, 1);
+    border-radius: 10px;
+    padding: 20px 0;
+    background-color:rgba(255, 199, 0, 1);
+
+}
+.section-2 div span{
+    padding: 2px 100px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 246, 161, 1);
+    background-color: rgba(255, 246, 161, 1);
+}
+.section-3{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:650px;
+    scrollbar-width: none;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 24px;
+    display: none;
+}
+.section-3 .section-3-0{
+    background-color: rgba(255, 255, 255, 1);
+}
+.section-3 .section-3-1 div{
+    padding: 30px  40px 150px 40px;
+}
+.section-3 .section-3-1{
+    background-color: rgba(255, 199, 0, 1);
+    display: flex;
+    clip-path: polygon(0 80%,100% 100%,100% 0%,0% 0%);
+    border-bottom-right-radius: 20px;
+}
+
+.section-3 .section-3-1 img{
+    max-height: 700px;
+}
+
+
+.section-3 .section-3-1 h1{
+    font-family:'CHEESEBURGA';
+    font-size:12vh;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+.section-3 .section-3-1 span{
+    font-size: 6vh;
+    font-family: 'Montserrat';
+    color:rgba(247, 105, 2, 0.82);
+}
+.section-3 .section-3-1 p{
+    font-family: 'Kumbh Sans';
+    font-size: 4vh;
+    text-align:right;
+    font-weight: 700;
+    line-height: 35px;
+    color:rgba(53, 53, 53, 1);
+}
+.section-3 .section-3-2{
+    padding-top: 100px;
+}
+.section-3-2-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding-bottom: 50px;
+}
+.section-3-2-left p{
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+.section-3-2-left #one{
+    color: rgba(255, 199, 0, 1);
+}
+.section-3-2-right{
+    display: flex;
+    margin-left:200px;
+}
+.section-3-2-right #Two{
+    display: none;
+}
+.section-3-2-right #Three{
+    display: none;
+}
+.section-3-2-right div{
+    max-width: 85%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+.section-3-2-right img{
+    border: 1px solid lightgray;
+    margin: 0 20px;
+    padding: 10px 50px;
+    max-height: 250px;
+    border-radius: 20px;
+    background-color: lightgray;
+    background-image: none;
+}
+
+.section-3-2-scroll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
+    padding: 0 70px;
+}
+.section-3-2-scroll button{
+    padding: 15px 10px;
+    border: 1px solid black;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: black;
+    color: white; 
+    border-radius: 10px;
+    box-shadow: 8px 9px 19px 0px rgba(0, 0, 0, 0.25);
+}
+.section-3-2-scroll button:hover{
+    border: 1px solid white;
+    background-color: white;
+    transition: all 0.5s ease;
+    color: black;
+}
+.section-3-2-scroll #scrollLeft span{
+    position: relative;
+    left: -7px;
+}
+.section-3-2-scroll #scrollRight span{
+    position: relative;
+    right: -5px;
+}
+.section-3-2-scroll span{
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.section-3-3{
+    text-align: center;
+    padding: 120px 0;
+}
+.section-3-3 h1{
+    font-family: CHEESEBURGA;
+    font-size: 90px;
+    font-weight: 400;
+    color:rgba(255, 168, 0, 1);
+;
+}
+.section-3-4{
+    clip-path: polygon(0 10%,100% 0%,100% 100%,0% 90%);
+    background-color: rgba(255, 199, 0, 1);
+    text-align: center;
+    padding: 100px 0;
+}
+.section-3-4 p{
+    padding: 60px 0;
+}
+.section-3-4 img{
+    max-height:700px;
+}
+.section-3-4 p:nth-child(1){
+    text-align: center;
+}
+.section-3-4 p:nth-child(2){
+    font-family: Kumbh Sans;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+.section-3-4 p:nth-child(3){
+    font-family: CHEESEBURGA;
+    font-size: 100px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 40px;
+}
+.section-3-5{
+    display: flex;
+    align-items: center;
+    padding: 10px 100px;
+}
+.section-3-5-1 p{
+    padding: 20px 0;
+}
+.section-3-5-1 p:nth-child(1){
+    font-family: Kumbh Sans;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(53, 53, 53, 1);
+}
+.section-3-5-1 p:nth-child(2){
+    font-family: Kumbh Sans;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(255, 168, 0, 1);
+}
+
+.section-3-5-2 img{
+    max-height: 600px;
+}
+.section-3-6 {
+    display: flex;
+    align-items: center;
+    padding: 100px 130px;
+}
+.section-3-6 div{
+    text-align: center;
+    margin: 0 15px;
+}
+.section-3-6 div:nth-child(1){
+    border: 1px solid rgba(255, 242, 128, 0);
+    border-bottom:none;
+    border-top-left-radius: 30px;
+    padding: 15px;
+    background: linear-gradient(180deg, #DBC70C 0%, rgba(255, 242, 128, 0) 100%);
+    color:rgba(255, 255, 255, 1);
+}
+.section-3-6 div:nth-child(2){
+    border: 1px solid rgba(65, 255, 255, 0);
+    border-bottom:none;
+    padding:25px 15px;
+    color:rgba(255, 255, 255, 1);
+    background: linear-gradient(180deg, #00D4D4 0%, rgba(65, 255, 255, 0) 100%);
+
+}
+.section-3-6 div:nth-child(3){
+    border: 1px solid rgba(212, 39, 255, 0);
+    border-bottom:none;
+    padding: 25px 0;
+    color:rgba(255, 255, 255, 1);
+    background: linear-gradient(180deg, #D427FF 0%, rgba(212, 39, 255, 0) 100%);
+
+}
+.section-3-6 div:nth-child(4){
+
+    border: 1px solid rgba(143, 58, 60, 0);
+    border-bottom:none;
+    border-top-right-radius: 30px;
+    padding: 25px 15px;
+    color:rgba(255, 255, 255, 1);
+    background: linear-gradient(179.53deg, #8F3A3C 0.41%, rgba(143, 58, 60, 0) 95.85%);
+
+}
+.section-3-6 img{
+    max-height: 300px;
+} 
+.section-3-6 p{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 900;
+    text-align:center;
+    line-height: 25px;
+    padding-bottom:20px;
+    color: white;
+}
+
+
+.section-7{
+    clip-path: polygon(0 10%,100% 0%,100% 100%,0% 90%);
+    background: radial-gradient(30.64% 32.66% at 47.77% 66.92%, #FFF280 0%, #FFC700 100%);
+    padding: 130px 0;
+
+}
+.section-7-1 h1{
+    font-family: CHEESEBURGA;
+    font-size: 80px;
+    font-weight: 400;
+    padding: 40px 0 0 120px;
+    color: rgba(255, 255, 255, 1);
+
+}
+.section-7-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-7-2 .section-7-2-1 div{
+    padding: 20px 40px;
+    border: 1px solid  rgba(53, 53, 53, 1);
+    background:rgba(53, 53, 53, 1);
+    margin: 20px 0;
+    border-radius: 20px;
+}
+.section-7-2 .section-7-2-1 div .snap-1{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+.section-7-2 .section-7-2-1 div .snap-2{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(255, 242, 128, 1);
+
+}
+.section-7-2 img{
+    max-height: 700px;
+}
+
+.section-8 h1{
+    font-family: CHEESEBURGA;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    color:rgba(255, 168, 0, 1);
+    text-transform: uppercase;
+}
+
+.section-9{
+    padding: 100px 0;
+}
+.section-9-1{
+    text-align: center;
+}
+.section-9-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.section-9-2 div img{
+    max-height: 400px;
+}
+.section-9-2 div:nth-child(1){ 
+    background-image: url("assets/pink tee bck.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 60px 100px;
+}
+
+.section-9-2 div:nth-child(2){
+    background-image: url("assets/black hoodie bck.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: none;
+    padding: 60px 100px;
+}
+.section-9-2 div:nth-child(3){
+    background-image: url("assets/blue cap bck.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: none;
+    padding: 60px 100px;
+}
+.section-9-2 div:nth-child(4){
+    background-image: url("assets/yellow tee bck.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: none;
+    padding: 60px 100px;
+}
+.section-9-1 a{
+    text-decoration: none;
+    margin: 0 5px;
+    border: 1px solid rgba(53, 53, 53, 1);
+    padding: 1px 10px;
+    border-radius: 75%;
+    background: rgba(53, 53, 53, 1);
+}
+.section-9-1 a:hover{
+    background-color: black;
+    border: 1px solid black;
+    transition: all 0.8s ease;
+}
+.section-10{
+    clip-path: polygon(0 10%,100% 0%,100% 100%,0% 90%);
+    background: radial-gradient(30.64% 32.66% at 47.77% 66.92%, #FFF280 0%, #FFC700 100%);
+    padding: 130px 0;
+}
+.section-10-1{
+    text-align: center;
+}
+.section-10-1 h1{
+    font-family: CHEESEBURGA;
+    font-size: 90px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 1);
+}
+.section-10-1 p{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+}
+.section-10-2{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding:100px 0 0 260px;
+    width: 82%;
+}
+.section-10-2 div{
+    padding: 0 20px;
+}
+.section-10-2 p{
+    text-align: center;
+}
+.section-10-2 img{
+    max-height: 500px;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+.section-10-2 a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size:large;
+    color: white;
+    font-weight: 900;
+    border:1px solid rgba(132, 58, 252, 1);
+    background: rgba(132, 58, 252, 1);
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.section-10-2 a:hover{
+    border:1px solid black;
+    background-color: black;
+    transition: all 0.6s ease;  
+}
+
+
+
+.section-11{
+    padding: 100px 0;
+    text-align: center;
+}
+.section-11-1 h1{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 168, 0, 1);
+
+}
+.section-11-1 span{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(53, 53, 53, 1);
+
+}
+.section-11-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.section-11-2 img{
+    max-height: 300px;
+    margin: 0 20px;
+}
+.section-12{
+    padding: 30px 0 30px 100px;
+}
+.section-12 h1,p{
+    font-family: CHEESEBURGA;
+    font-size: 100px;
+    font-weight: 400;
+    text-align: left;
+    color:rgba(255, 168, 0, 1);
+}
+.section-13{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+.section-13-1{
+    border: 5px solid rgba(5, 83, 200, 0.66);
+    padding: 30px 50px;
+    border-radius: 15px;
+    background: linear-gradient(137.69deg, #80B3FF 31.37%, #417DF1 84.39%);
+}
+.section-13-1 div{
+    padding: 10px 0;
+}
+.section-13-1 img{
+    background-color: black;
+    color: white;
+    border-radius:15px;
+    padding: 10px;
+    max-width: 60px;
+}
+.section-13-1 a{
+    font-family: Montserrat;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    align-items: center;
+    position:relative;
+    top:-20px;
+    left:10px;
+    color: white;
+}
+.section-13-2 img{
+    max-height: 700px;
+}
+
+
+
+
+@media (min-width:481px) and (max-width:768px){
+    .section-1 div:nth-child(2){
+        margin-top: 50px;
+    }
+    .section-2{
+        margin: 40px 0 0 0;
+
+    }
+    .section-3{
+        left: 0;
+        right: 0;
+        top: 216px;
+    }
+    .section-3 .section-3-1 div{
+        padding: 0;
+    }
+    .section-3 .section-3-1{
+          padding:0  0 300px 0;
+    }
+    .section-3 .section-3-1{
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .section-3 .section-3-1 p{
+        text-align: center;
+    }
+    .section-3-2-right{
+        margin: 10px 0;
+    }
+    .section-3-2-scroll{
+        display: none;
+    }
+    .section-3-2-right div{
+        max-width:fit-content;
+    }
+    .section-3-4 img{
+        max-height:300px;
+    }
+    .section-3 .section-3-1 img{
+        max-height: 500px;
+    }
+
+    .section-3-5{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .section-3-5 .section-3-5-1 p{
+        text-align: center;
+    }
+    .section-3-4 p{
+        padding: 30px 0;
+    }
+    .section-3-6{
+        padding: 50px 0;
+        flex-direction: column;
+    }
+    .section-3-6 div{
+        margin: 40px 0;
+    }
+    .section-7-2{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .section-7-2 div{
+        padding: 40px 0;
+    }
+    .section-7-2 img{
+        max-height: 550px;
+    }
+    .section-9-2 div img{
+        max-height: 200px;
+    }
+    .section-10-2{
+        padding: 40px 0;
+        flex-direction: column;
+        width: auto;
+    }
+    .section-10-2 img{
+        max-height: 300px;
+    }
+    .section-10-2 div{
+        padding: 20px 0;
+    }
+    .section-11-2{
+        flex-direction: column;
+    }
+    .section-11-2 div{
+        padding: 20px 0;
+    }
+    .section-13{
+        flex-direction: column;
+    }
+    .section-13 div{
+        margin: 30px 0;
+    }
+    .section-13 .section-13-2 img{
+        max-height: 500px;
+    }
+    .section-7-1 h1{
+        padding: 0;
+        text-align: center;
+    }
+    .section-12{
+        padding: 30px 0;
+    }
+    .section-12 h1,p{
+        text-align: center;
+    }
+    .section-3-4 p:nth-child(3){
+        padding:0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:480px){
+    .section-1 div:nth-child(2){
+        margin-top: 50px;
+    }
+    .section-2{
+        margin: 40px 0 0 0;
+    }
+    .section-3{
+        left: 0;
+        right: 0;
+        top: 574px;
+        height: 700px;
+    }
+    .section-3 .section-3-1 div{
+        padding: 0;
+    }
+    .section-3 .section-3-1 p{
+        text-align: center;
+    }
+    .section-3 .section-3-1{
+          padding:0  0 300px 0;
+    }
+     .section-3 .section-3-1{
+        flex-direction: column;
+    }
+    .section-3-2-right{
+        margin:0;
+    }
+    .section-3-2-scroll{
+        display: none;
+    }
+    .section-3-2-right div{
+        max-width:fit-content;
+    }
+    .section-3-4 img{
+        max-height:200px;
+    }
+    .section-3 .section-3-1 img{
+        max-height: 350px;
+    }
+    .section-3-5{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .section-3-5 .section-3-5-1 p{
+        text-align: center;
+    }
+    .section-3-4 p{
+        padding: 30px 0;
+    }
+    .section-3-6{
+        padding: 50px 0;
+        flex-direction: column;
+    }
+    .section-3-6 div{
+        margin: 40px 0;
+    }
+    .section-7-2{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .section-7-2 div{
+        padding: 40px 0;
+    }
+    .section-7-2 img{
+        max-height: 400px;
+    }
+    .section-9-2 div img{
+        max-height: 100px;
+    }
+    .section-10-2{
+        padding: 40px 0;
+        flex-direction: column;
+        width: auto;
+    }
+    .section-10-2 img{
+        max-height: 200px;
+    }
+    .section-10-2 div{
+        padding: 20px 0;
+    }
+    .section-11-2{
+        flex-direction: column;
+    }
+    .section-11-2 div{
+        padding: 20px 0;
+    }
+    .section-13{
+        flex-direction: column;
+    }
+    .section-13 div{
+        margin: 30px 0;
+    }
+    .section-13 .section-13-2 img{
+        max-height: 400px;
+    }
+    .section-7-1 h1{
+        padding: 0;
+        text-align: center;
+        font-size: 60px;
+    }
+    .section-12{
+        padding: 30px 0;
+    }
+    .section-12 h1,p{
+        text-align: center;
+    }
+    .section-3-4 p:nth-child(3){
+        padding:0;
+        text-align: center;
+    }
+    .section-3-5-2 img{
+        max-height: 370px;
+    }
+    .section-8 h1{
+        font-size: 50px;
+    }
+    .section-1 h1{
+        font-size: 10vh;
+        letter-spacing: 1px;
+    }
+}
